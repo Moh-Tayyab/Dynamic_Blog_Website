@@ -1,0 +1,87 @@
+[
+{
+    "id": "1",
+    "tittle": "The Rise of AI: Transforming Our Future",
+    "author": "TailTech",
+    "content": "Discover how artificial intelligence is revolutionizing our world! From healthcare innovations and self-driving cars to personalized learning and ethical considerations, explore the profound impact of AI on various industries and our daily lives. Read the full article to learn more about the future shaped by AI.",
+    "src": "/blog1.png"
+},
+{
+    "id": "2",
+    "tittle": "The Evolution of Cybersecurity: A Comprehensive Guide",
+    "author": "CyberSecurityExpert",
+    "content": "Stay updated on the latest trends and developments in cybersecurity, from zero-day attacks to advanced threat intelligence. Learn about emerging threats, best practices, and cybersecurity tools to protect your digital infrastructure. Read the full article to learn more about the evolution of cybersecurity.",
+    "src": "/blog2.png"
+    },
+    {
+        "id": "3",
+        "tittle": "The Impact of AI on Society: A Perspective from History",
+        "author": "SocietyExpert",
+        "content": "Explore the historical and ongoing impact of AI on society, from the development of the first computers to the rise of artificial intelligence. Learn about the challenges and opportunities for AI in various industries, from healthcare to education. Read the full article to learn more about the impact of AI on society.",
+        "src": "/blog3.png"
+    },
+    {
+        "id": "4",
+        "tittle": "The Future of AI: A Vision for the Digital Age",
+        "author": "FutureExpert",
+        "content": "Uncover the potential future of AI, from its role in personalized healthcare to its impact on job markets and society. Learn about emerging technologies, such as machine learning and artificial intelligence, and the potential impact of AI on various industries. Read the full article to learn more about the future of AI.",
+        "src": "/blog4.png"
+    },
+    {
+        "id": "5",
+        "tittle": "The Role of AI in Education: A Comprehensive Guide",
+        "author": "EducationExpert",
+        "content": "Explore the role of AI in education, from improving student performance to enhancing learning experiences. Learn about AI-powered tools, such as virtual reality and augmented reality, and the potential impact of AI on education. Read the full article to learn more about the role of AI in education.",
+        "src": "/blog5.png"
+    },
+    {
+        "id": "6",
+        "tittle": 
+        "The Future of Work: A Perspective from AI",
+        "author": "WorkExpert",
+        "content": "Explore the potential future of work, from AI-powered job search and automation to AI-driven decision-making. Learn about emerging technologies, such as machine learning and artificial intelligence, and the potential impact of AI on work. Read the full article to learn more about the future of work.",
+        "src": "/blog6.png"
+    },
+    {
+        "id": "7",
+        "tittle": "Agentic AI: Multiple AI Agents Will Work Together",
+        "author": "AgenticAI",              
+        "content": "Explore the potential future of agentic AI, from AI-powered decision-making to AI-driven innovation. Learn about emerging technologies, such as machine learning and artificial intelligence, and the potential impact of AI on various industries. Read the full article to learn more about the future of  agentic AI.",
+        "src": "/blog7.png"
+    },
+    {
+        "id": "8", 
+        "tittle": "Unlocking the Potential of quantum computing ETF", 
+        "author": "QuantumETF",
+        "content": "Quantum Computing leverage the properties of quantum mechanics to process information exponentially faster than classical computers for specific tasks. This year, we're seeing quantum computing being applied in areas such as cryptography, where it can potentially crack currently considered secure codes, and in drug discovery, speeding up the process by accurately simulating molecular structures",
+        "src": "/blog8.png"
+    },
+    {
+        "id": "9",
+        "tittle": "The Rise of 6G: Connectivity and Communication",
+        "author": "6GExpert",   
+        "content": "The next generation of wireless technology, 6G, is on the horizon. This new technology promises to revolutionize the way we connect and communicate, with faster speeds and lower latency than ever before. But what exactly is 6G, and how will it impact our daily lives? Read the full article to learn more about the future of 6G.",
+        "src": "/blog9.png"
+    },
+    {
+        "id": "10", 
+        "tittle": "Virtual Reality (VR) 2.0: Virtual Reality Experience",
+        "author": "VRExpert",
+        "content": "Virtual reality (VR) has become a popular medium for entertainment and education. With VR 2.0, we're seeing even more immersive experiences, with new technologies and applications emerging. This year, we're exploring the possibilities of VR 2.0 in various industries, such as healthcare, education, and entertainment",
+        "src": "/blog10.png"
+    },
+    {
+        "id": "11", 
+        "tittle": " Internet of Things (IoT) in Smart Cities",  
+        "author": "IoTExpert",
+        "content": "The Internet of Things (IoT) is transforming the way we live and work in smart cities. With IoT, we're seeing improved efficiency, reduced costs, and enhanced quality of life. This year, we're exploring the possibilities of IoT in various industries, such as transportation, energy, and healthcare",
+        "src": "/blog11.png"
+    },
+{
+    "id": "12",     
+    "tittle": "The Future of Cybersecurity: Emerging Threats and Solutions",
+    "author": "CyberSecurityExpert",
+    "content": "Stay updated on the latest trends and developments in cybersecurity, from zero-day attacks to advanced threat intelligence. Learn about emerging threats, best practices, and cybersecurity tools to protect your digital infrastructure. Read the full article to learn more about the evolution of cybersecurity.",
+    "src": "/blog12.png"
+}
+]
