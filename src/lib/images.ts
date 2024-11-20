@@ -1,6 +1,5 @@
 export const images= [
+    '/aiBanner4.png'
     
-    '/banner1.png',
-    '/banner2.png', 
-
 ]
+
