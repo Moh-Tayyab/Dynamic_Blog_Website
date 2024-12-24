@@ -12,9 +12,8 @@ const Navbar = () => {
       {/* Main Navbar */}
       <nav className="flex items-center justify-between p-4">
         {/* Logo */}
-        <div className="flex items-center space-x-4">
-          <Image src="/logo3.png" alt="TechTales" width={120} height={100} 
-          />     
+        <div className="flex items-center space-x-4 font-extrabold font-serif text-3xl text-black py-4">
+         TechTails.    
         </div>
 
         {/* Hamburger Menu for Mobile */}
@@ -74,7 +73,7 @@ const Navbar = () => {
               Articles
             </Link>
             <Link
-              href="/"
+              href="/about"
               className="hover:bg-cyan-500 rounded-full px-4 py-2"
             >
               About
@@ -105,7 +104,7 @@ const Navbar = () => {
             Articles
           </Link>
           <Link
-            href="/"
+            href="/about"
             className="text-gray-800 hover:bg-cyan-500 px-4 py-2 rounded-md"
             onClick={() => setIsMenuOpen(false)}
           >
