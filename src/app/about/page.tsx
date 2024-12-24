@@ -19,7 +19,7 @@ const page = () => {
             insightful, and thought-provoking content across a wide spectrum of
             technological fields.</p> <br />
             <p className="lg:w-1/2 w-full leading-relaxed text-gray-500 text-xl">
-            Whether you're a seasoned professional, an aspiring tech enthusiast,
+            Whether you  a seasoned professional, an aspiring tech enthusiast,
             or simply curious about the future of innovation, our blog offers
             in-depth analyses, practical guides, and engaging discussions to
             keep you ahead in the ever-evolving world of technology.
