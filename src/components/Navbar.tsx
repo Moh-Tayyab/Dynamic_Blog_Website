@@ -78,12 +78,12 @@ const Navbar = () => {
             >
               About
             </Link>
-            <Link
+            {/* <Link
               href="/sign-up"
              
             >
             <span>Sign up</span>
-            </Link>
+            </Link> */}
             {isSignedIn ? (
                 <UserButton appearance={{
                   elements: {
@@ -99,22 +99,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
- {/* User Account */}
- {/* <div className="p-1 text-gray-600 hover:text-primary transition-colors">
-              {isSignedIn ? (
-                <UserButton appearance={{
-                  elements: {
-                    avatarBox: "h-8 w-8",
-                  }
-                }} />
-              ) : (
-                <SignInButton>
-                  <button>
-                    <TbUserExclamation className="h-6 w-6" />
-                  </button>
-                </SignInButton>
-              )}
-            </div> */}
       {/* Mobile Menu Dropdown */}
       {isMenuOpen && (
         <div className="md:hidden flex flex-col space-y-2 bg-white px-4 pb-4 shadow-md">
@@ -139,18 +123,27 @@ const Navbar = () => {
           >
             About
           </Link>
-          <button
+          {/* <button
             onClick={() => setIsMenuOpen(false)}
             className="text-gray-800 hover:bg-cyan-500 px-4 py-2 rounded-md"
           >
             Sign up
-          </button>
+          </button> */}
+          {isSignedIn ? (
+                <UserButton appearance={{
+                  elements: {
+                    avatarBox: "h-8 w-8",
+                  }
+                }} />
+              ) :(<SignInButton>
           <button
             onClick={() => setIsMenuOpen(false)}
             className="bg-gray-800 text-white px-4 py-2 rounded-full"
           >
             Log in
           </button>
+          </SignInButton>
+              )}
         </div>
       )}
     </header>

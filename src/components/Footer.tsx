@@ -3,93 +3,80 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#ffffff] text-[#000000] font-poppins">
-      <div className="container pl-6 pr-8 py-12 mx-auto">
-        <div className="flex flex-wrap md:text-left text-center order-first">
-          {/* Logo and Address Section */}
-          <div className="w-full md:w-[25%] mb-6 md:mb-0">
-            <Link href={'/'} className="flex items-center md:justify-start justify-center">
-              <h2 className="text-[26px] font-[700] leading-[36px] font-serif">TechTails.</h2>
+    <footer className="bg-white text-black border-t border-gray-100">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+          {/* Brand Section */}
+          <div className="space-y-4">
+            <Link href="/" className="text-2xl font-bold font-serif hover:text-gray-600 transition-colors">
+              TechTails.
             </Link>
-            <p className="mt-4 text-[16px] font-[400] leading-[24px] text-[#9F9F9F]">
-            Exploring the frontiers of artificial <br /> intelligence and its impact on our <br /> world.
+            <p className="text-gray-500 text-sm leading-relaxed">
+              Exploring the frontiers of artificial intelligence and its impact on our world.
             </p>
           </div>
 
-          {/* Links Section */}
-          <div className="w-full md:w-[15%] mb-6 md:mb-0 ml-10 px-4">
-            <h2 className="text-[16px] font-[500] leading-[24px] text-[#9F9F9F] mb-8">Links</h2>
-            <nav className="list-none space-y-8">
-              <li>
-                <Link href="/" className="hover:underline">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/shop" className="hover:underline">
-                 Articles
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="hover:underline">
-                  About
-                </Link>
-              </li>
+          {/* Navigation Links */}
+          <div className="space-y-4">
+            <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">Links</h3>
+            <nav className="flex flex-col space-y-2">
+              <Link href="/" className="text-sm hover:text-gray-600 transition-colors">
+                Home
+              </Link>
+              <Link href="/articles" className="text-sm hover:text-gray-600 transition-colors">
+                Articles
+              </Link>
+              <Link href="/about" className="text-sm hover:text-gray-600 transition-colors">
+                About
+              </Link>
             </nav>
           </div>
 
-          {/* Help Section */}
-          <div className="w-full md:w-[16%] mb-6 md:mb-0 px-4">
-            <h2 className="text-[16px] font-[500] leading-[24px] text-[#9F9F9F] mb-8">Resouces</h2>
-            <nav className="list-none space-y-6">
-              <li>
-                <Link href="/" className="hover:underline">
+          {/* Resources */}
+          <div className="space-y-4">
+            <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">Resources</h3>
+            <nav className="flex flex-col space-y-2">
+              <Link href="/documentation" className="text-sm hover:text-gray-600 transition-colors">
                 Documentation
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="hover:underline">
+              </Link>
+              <Link href="/" className="text-sm hover:text-gray-600 transition-colors">
                 Tutorials
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="hover:underline">
+              </Link>
+              <Link href="/" className="text-sm hover:text-gray-600 transition-colors">
                 FAQ
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="hover:underline">
+              </Link>
+              <Link href="/" className="text-sm hover:text-gray-600 transition-colors">
                 Support
-                </Link>
-              </li>
+              </Link>
             </nav>
           </div>
 
-          {/* Newsletter Section */}
-          <div className="w-full md:w-[35%] px-4">
-            <h2 className="text-[16px] font-[500] leading-[24px] text-[#9F9F9F] mb-7">Newsletter</h2>
-            <p className="text-[16px] font-[500] leading-[24px] text-[#000000] mb-8">
-            Get Our Latest Update In Your Email. Subscribe now!
+          {/* Newsletter */}
+          <div className="space-y-4">
+            <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">Newsletter</h3>
+            <p className="text-sm text-gray-600">
+              Get our latest updates in your email. Subscribe now!
             </p>
-            <div className="flex items-center">
+            <form className="flex flex-col sm:flex-row gap-1">
               <input
-                type="text"
-                placeholder="Enter Your Email Address"
-                className="border-b-2 border-[#000000] focus:outline-none flex-grow text-sm font-[400] leading-[21px] py-1"
+                type="email"
+                placeholder="Enter your email"
+                className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
-              <button className="ml-4 font-[500] ms:text-[18px] lg:text-[18px] leading-[18px] text-[#000000] hover:scale-110 rounded-md  p-2 border">
-                SUBSCRIBE
+              <button
+                type="submit"
+                className="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors text-sm font-medium"
+              >
+                Subscribe
               </button>
-            </div>
+            </form>
           </div>
         </div>
-      </div>
 
-      {/* Footer Bottom Section */}
-      <div className="border-t-2 border-[#D9D9D9] px-6">
-        <div className="container py-4 mx-auto flex text-start items-start">
-          <p className="text-[14px] font-[400] leading-[24px]">
-          © 2024 TechTails. All rights reserved.
+        {/* Copyright Section */}
+        <div className="mt-12 pt-8 border-t border-gray-200">
+          <p className="text-center text-sm text-gray-500">
+            © {new Date().getFullYear()} TechTails. All rights reserved.
           </p>
         </div>
       </div>
