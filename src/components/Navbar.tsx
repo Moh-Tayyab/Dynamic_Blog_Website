@@ -1,12 +1,12 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
+import { SignInButton, UserButton, useUser } from '@clerk/nextjs';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to handle menu toggle
-
+  const { isSignedIn } = useUser();
   return (
     <header className="bg-white shadow-md">
       {/* Main Navbar */}
@@ -78,14 +78,43 @@ const Navbar = () => {
             >
               About
             </Link>
+            <Link
+              href="/sign-up"
+             
+            >
             <span>Sign up</span>
+            </Link>
+            {isSignedIn ? (
+                <UserButton appearance={{
+                  elements: {
+                    avatarBox: "h-8 w-8",
+                  }
+                }} />
+              ) :(<SignInButton>
             <button className="bg-gray-800 text-white px-4 py-2 rounded-full">
               Log in
             </button>
+            </SignInButton>
+          )}
           </div>
         </div>
       </nav>
-
+ {/* User Account */}
+ {/* <div className="p-1 text-gray-600 hover:text-primary transition-colors">
+              {isSignedIn ? (
+                <UserButton appearance={{
+                  elements: {
+                    avatarBox: "h-8 w-8",
+                  }
+                }} />
+              ) : (
+                <SignInButton>
+                  <button>
+                    <TbUserExclamation className="h-6 w-6" />
+                  </button>
+                </SignInButton>
+              )}
+            </div> */}
       {/* Mobile Menu Dropdown */}
       {isMenuOpen && (
         <div className="md:hidden flex flex-col space-y-2 bg-white px-4 pb-4 shadow-md">
